@@ -1,0 +1,66 @@
+/*------------------------------------*\
+		$ELEMENTOS
+\*------------------------------------*/
+
+hr {
+	/* BOX MODEL */
+	display: block;
+	padding: 0;
+	height: 2px;
+	border: 0;
+	border-top: 2px solid $color-base;
+
+}
+
+
+img{
+	/* BOX MODEL */
+	max-width: 100%;
+	vertical-align: top;
+
+}
+
+.img--rounded{
+	border-radius: $rounded;
+}
+
+.img--circle{
+	border-radius: 100%;
+}
+
+// ********************************
+// imagenes para WordPress 
+// BORRAR SI NO SE UTILIZA WP
+// ********************************
+
+img.alignright {
+    float:right;
+    margin: -70px 0 1em 1em;
+}
+img.alignleft {
+    float:left; 
+    margin:0 1em 1em 0
+}
+img.aligncenter {
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-top: 20px; 
+    margin-bottom: 50px;
+}
+a img.alignright {
+    float:right; 
+    margin:-65px 0 1em 1em
+}
+a img.alignleft {
+    float:left;
+    margin:0 1em 1em 0
+}
+a img.aligncenter {
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto
+}
+img#wpstats {
+    display: none;
+}

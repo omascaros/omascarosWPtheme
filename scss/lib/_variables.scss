@@ -1,0 +1,131 @@
+// ------------------------------
+//		$VARIABLES
+//-------------------------------
+
+// Archivo de configuración de las
+// variables del framework
+
+
+
+// ------------------------------
+//		$BREAKPOINTS
+//-------------------------------
+
+// Los breakpoints no deben ser fijos sino
+// variar según el contenido de nuestro layout.
+
+$bp1                 	: 30em; // ---  480px --- 
+$bp2                 	: 40em; // ---  640px --- 
+$bp3                 	: 50em; // ---  800px --- 
+$bp4                 	: 64em; // --- 1024px --- 
+$bp5                 	: 75em; // --- 1200px --- 
+
+
+
+// ------------------------------
+//		$RUTAS
+//-------------------------------
+
+// Ruta imagenes y thumbnails
+$ruta-img     			: "../images";
+
+
+
+// ------------------------------
+//		$COLORES
+//-------------------------------
+
+// Escala de grises
+$color-black         	: hsla(0, 0%, 0%, 1);
+$color-superdark     	: lighten($color-black, 10%);
+$color-darkergrey		: lighten($color-black, 15%);
+$color-darkgrey			: lighten($color-black, 25%);
+$color-grey				: lighten($color-black, 50%);
+$color-lightgrey		: lighten($color-black, 75%);
+$color-lightergrey		: lighten($color-black, 90%);
+$color-white			: hsla(360, 100%, 100%, 1);
+
+// Redes sociales
+$color-facebook       	: hsla(225, 51%, 47%, 1);
+$color-twitter        	: hsla(212, 100%, 63%, 1);
+$color-googleplus     	: hsla(7, 71%, 55%, 1);
+$color-pinterest      	: hsla(358, 73%, 46%, 1);
+$color-skype          	: hsla(201, 91%, 51%, 1);
+$color-spotify        	: hsla(81, 75%, 41%, 1);
+
+// Alertas y Popups 
+$color-info      		: hsla(240, 34%, 79%, 1);
+$color-success 			: hsla(78, 75%, 45%, 1);
+$color-warning	 		: hsla(28, 82%, 56%, 1);
+$color-alert			: hsla(0, 79%, 55%, 1);
+
+// Layout
+$color-base 			: hsla(210, 29%, 24%, 1);
+$color-secondary		: hsla(28, 80%, 52%, 1);
+$color-third			: hsla(168, 75%, 42%, 1);
+
+
+
+// -----------------------------------------------------
+//		            $LAYOUT
+// variables para la visualizacion correcta del layout
+//------------------------------------------------------
+
+// General
+$page-width   			    : 100%;
+$page-max-width	    	    : 1200px;
+$page-background-color	    : $color-lightergrey;
+
+// Navegacion
+$nav__font-size             : 16;
+$nav__font-color            : $color-white;
+$nav__background-color      : $color-base;
+
+// Sangria y altura de línea
+$gutterwidth    			: 0.5em;
+$baseline        			: 0.5em;
+
+// Fuentes
+$font__base    		        : helvetica, Arial, sans-serif;
+$font__secondary    	    : "times new roman", times, serif;
+$font__code    		        : courier, serif;
+$font-size    				: 16;
+$font-color                 : $color-darkergrey;
+$font-color--strong         : $color-black;
+
+// Enlaces
+$link__color   				: $color-base;
+$link__hover           		: $color-secondary;
+$link__visited            	: lighten($color-base, 10%);
+$link__focus           		: darken($color-secondary, 10%);
+
+// Botones
+$button__background-color  	: $color-base;
+$button__border-color       : $color-black;
+$button__border-width       : 1px;
+$button__border-style       : solid;
+$button__text-color         : $color-white;
+$button__hover-color        : lighten($color-lightgrey, 25%);
+
+// Formularios
+$input__background          : $color-white;
+$input__border              : lighten($color-base, 20%);
+$input__borderwidth         : 1px;
+$input__borderstyle         : solid;
+$input__hover               : $color-base;
+$input__focus               : lighten($color-secondary, 20%);
+$input__placeholdercolor    : $color-lightergrey;
+
+
+// Bordes redondeados
+$rounded    				: 2px;
+
+// Animaciones: duracion
+$animationTime    			: .5s;
+
+
+
+
+
+
+
