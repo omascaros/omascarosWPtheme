@@ -1,0 +1,118 @@
+/*------------------------------------*\
+            $HEADER
+\*------------------------------------*/
+
+.main-header{
+    background-color: $color-third;
+}
+
+//--------------------------------
+//         NAVEGACION
+//--------------------------------
+.main-menu{
+//    background-color: transparent;
+}
+
+    .menu-icon{
+        /* BOX MODEL */
+        display: block;
+        width: 100%;
+        height: 4em;
+        border-bottom: 1px solid white;
+        /* LAYOUT */
+        background-color: $color-base;
+    }
+
+        .nav__checkbox{
+            display: none;
+        }
+
+        .nav__label{
+            &::before{
+                content: "☰"; 
+                
+                /* POSITION */
+                position: absolute;
+                z-index: 100;
+                top: 3px;
+                left: 3px;
+                /* LAYOUT */
+                font-size: 3em;
+                color: $color-white;
+            }
+        }
+
+        
+    .main-nav{
+        /* POSITION */
+        position: absolute;
+        top: 3em;
+        left: -250px;
+        /* BOX MODEL */
+        width: 250px;
+        height: 100%; /* Fallback for old safari and opera mini browsers */
+        height: 100vh;        
+        /* LAYOUT */
+        background-color: $color-base;
+    }
+        .main-nav__list{
+            width: 100%;
+        }
+
+            .menu-item{
+                display: block;
+                height: 100px; /* Fallback for old safari and opera mini browsers */
+                height: 15vh;
+                line-height: 100px; /* Fallback for old safari and opera mini browsers */
+                line-height: 15vh;                
+                border-bottom: 1px solid white;
+                
+                & a{
+                    margin-left: 2em;
+                }
+                
+                & .current{
+                    background-color: lighten($color-base, 10%);
+                }
+            }
+
+/*
+* Apertura y cierre del menu
+*/
+    .nav__checkbox:checked ~ .main-nav{
+        /* BOX MODEL */
+        left: 0;
+        transform: all .5s ease-in;
+    }
+
+
+    .nav__checkbox:checked ~ .nav__label::before{
+        content: "X";
+    }
+
+//--------------------------------
+//         LOGO
+//--------------------------------
+
+.logo{
+    /* POSITION */
+    position: absolute;
+    top: 1em;
+    left: 40%;
+    color: $color-white;
+}
+
+//--------------------------------
+//         SEO text
+//--------------------------------
+
+.seo-Text{
+    margin-bottom: 1px;
+    padding-left: .5em;
+    padding-right: .5em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    
+    color: $color-white;
+    text-align: center;
+}

@@ -27,7 +27,8 @@
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/favicon-114x114.png" />
 
         <!-- Javascript -->
-
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
+        
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -35,58 +36,66 @@
 <![endif]-->
 
         <header class="main-header">
-            <nav class="main-nav">
-                <ul class="main-nav__list">
-                    <li class="menu-item">HOME</li>
-                    <li class="menu-item">ABOUT ME</li>
-                    <li class="menu-item">PORTFOLIO</li>
-                    <li class="menu-item">BLOG</li>
-                    <li class="menu-item">CONTACT</li>
-                </ul>
-            </nav>
+           <div class="main-menu">
+               <!--Contenido no semantico para no tener que usar javascript-->
+               <div class="menu-icon">
+                   <label for="nav__checkbox" class="nav__label"></label>	
+               </div>
+               <input type="checkbox" id="nav__checkbox" class="nav__checkbox" />
+               		
+                <nav class="main-nav">
+                    <ul class="main-nav__list">
+                        <li class="menu-item"><a href="">HOME</a></li>
+                        <li class="menu-item"><a href="">ABOUT ME</a></li>
+                        <li class="menu-item"><a href="">PORTFOLIO</a></li>
+                        <li class="menu-item"><a href="">BLOG</a></li>
+                        <li class="menu-item"><a href="">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
             
             <figure class="logo">
                 <img src="" alt="Omascaros">
             </figure>
 
-            <h1 class="h2">
+            <h1 class="seo-Text">
                 Diseño y Desarrollo de páginas web
             </h1>
         </header>
         <main class="main">
             <section class="aboutme">
-                <h2>ABOUT ME</h2>
-                <article>
-                    <figcaption class="aboutme__article__image">
+                <h2 class="main-section__title">ABOUT ME</h2>
+                <article class="aboutme__article">
+                    <figure class="aboutme__article__image">
                         <img src="http://placehold.it/300x250" alt="">
-                    </figcaption>
+                    </figure>
                     <h3>FRONT END</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id earum, aspernatur doloribus harum aliquid quibusdam aliquam consectetur quasi magnam aut doloremque, quaerat non illum nam beatae! Facilis, dolorum sit iste!</p>
                 </article>
-                <article>
-                    <figcaption class="aboutme__article__image">
+                <article class="aboutme__article">
+                    <figure class="aboutme__article__image">
                         <img src="http://placehold.it/300x250" alt="">
-                    </figcaption>
+                    </figure>
                     <h3>CMS</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores soluta voluptas quis animi beatae explicabo aliquam nulla deleniti labore ex est adipisci, accusamus, voluptates mollitia optio impedit. Ipsum, obcaecati, veritatis.</p>
                 </article>
-                <article>
-                    <figcaption class="aboutme__article__image">
+                <article class="aboutme__article">
+                    <figure class="aboutme__article__image">
                         <img src="http://placehold.it/300x250" alt="">
-                    </figcaption>
+                    </figure>
                     <h3>PROGRAMACION</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque sint est obcaecati optio, sit tempora? Quidem praesentium, id nemo dolore excepturi repellendus unde distinctio sint officiis quod, illum similique necessitatibus!</p>
                 </article>
-                <article>
-                    <figcaption class="aboutme__article__image">
+                <article class="aboutme__article">
+                    <figure class="aboutme__article__image">
                         <img src="http://placehold.it/300x250" alt="">
-                    </figcaption>
+                    </figure>
                     <h3>HERRAMIENTAS</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid mollitia expedita illo ut soluta autem a unde fugit voluptates dolorem eius quibusdam, corporis culpa voluptate cum incidunt sunt iure, nostrum!</p>
                 </article>
             </section>
             <section class="portfolio">
-                <h2>PORTFOLIO</h2>
+                <h2 class="main-section__title">PORTFOLIO</h2>
                 <figure>
                     <img src="http://placehold.it/300x250" alt="">
                 </figure>
@@ -101,7 +110,7 @@
                 <figure>image title</figure>
             </section>
             <section class="blog">
-                <h2>BLOG</h2>
+                <h2 class="main-section__title">BLOG</h2>
                 <article class="blog-post">
                     <header class="blog-post__header">
                         <h3>Post title</h3>
