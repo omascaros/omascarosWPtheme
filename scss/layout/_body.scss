@@ -1,0 +1,33 @@
+/*
+* html
+*/
+html{
+    /* LAYOUT */     
+    font-size: 80%;
+}
+
+/*
+* body
+*/
+body{
+    /* BOX MODEL */
+    max-width: $page-max-width;
+    margin-left: auto;
+    margin-right: auto;
+    /* LAYOUT */
+    background-color: $page-background-color;
+}
+
+@include media-query-bp($bp4,min,width,all){
+    html{
+        /* LAYOUT */
+        font-size: $page-width;
+    }
+}
+
+@include media-query-bp($bp5,min,width,all){
+    html{
+        /* LAYOUT */
+        font-size: 120%;
+    }
+}
